@@ -82,11 +82,11 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-#intro .avatar img {
+.intro__img {
   height: 60%;
   filter: saturate(0.5);
 }
-#intro .content {
+.intro-content {
   position: absolute;
   top: 50%;
   left: 50px;
@@ -94,8 +94,8 @@ header {
   width: 500px;
   max-width: 80%;
 }
-#intro .content .name,
-#intro .content .job {
+.intro-content__name,
+.intro-content__job {
   font-size: 6em;
   font-weight: bold;
   font-family: "Righteous", sans-serif;
@@ -107,21 +107,21 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-#intro .content .des {
+.intro-content__des {
   margin-top: 1.2em;
   width: 70%;
 }
-#intro .content .des button {
+.intro-content__des button {
   margin-top: 1.2em;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
 }
-#intro .content .des button:hover {
+.intro-content__des button:hover {
   scale: 1.025;
 }
 
-#intro .content i {
+.intro-content i {
   font-size: 10em;
   color: #293b4c;
   position: absolute;
@@ -134,14 +134,14 @@ header {
 #experience {
   background-color: var(--bg-about);
 }
-#experience .about-and-list {
+.experience-about-and-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
   position: relative;
 }
 
-#experience .about {
+.experience-about {
   width: 100%;
   margin: 0 auto; /* center it horizontally */
   margin: 20px 0 0 0;
@@ -157,17 +157,17 @@ header {
   height: fit-content; /* Or you can control height */
   z-index: 10;
 }
-#experience .list-wrapper {
+.experience-about__list-wrapper {
   overflow-x: auto;
 }
 
-#experience .about .title {
+.experience-about__title {
   font-size: var(--fs-h3);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#experience .about .subtitle {
+.experience-about__subtitle {
   font-size: var(--fs-body);
   opacity: 0.8;
 }
@@ -262,7 +262,7 @@ header {
   position: relative;
 }
 
-#skill .about {
+.skill-about {
   width: 100%;
   margin: 0 auto; /* center it horizontally */
   margin: 20px 0 0 0;
@@ -278,22 +278,14 @@ header {
   height: fit-content; /* Or you can control height */
   z-index: 10;
 }
-#skill .list-wrapper {
-  overflow-x: auto;
-}
-#skill .about .title {
+.skill-about__title {
   font-size: var(--fs-h3);
   font-weight: bold;
   margin-bottom: 10px;
 }
-#skill .about .subtitle {
+.skill-about__subtitle {
   font-size: var(--fs-body);
   opacity: 0.8;
-}
-#skill .list {
-  margin: 20px 0 0 0;
-  background-image: linear-gradient(45deg, #979086 #1c1c1b, #6a5d52);
-  background-size: cover;
 }
 
 .skill-list {
@@ -303,6 +295,7 @@ header {
   padding: 50px;
   box-sizing: border-box;
   gap: 0;
+  overflow-x: auto;
 }
 
 .skill__item {
@@ -312,10 +305,6 @@ header {
   /* align-items: center; */
   /* text-align: center; */
   padding: 20px;
-}
-
-#skill .list .item:nth-child(odd) {
-  background-color: #6a5d52;
 }
 
 .skill__container i {
@@ -496,7 +485,7 @@ header {
 
 /* responsiveness */
 @media screen and (max-width: 991px) {
-  #intro .avatar img {
+  .intro__img {
     transform: translateX(200px);
   }
 }
@@ -504,38 +493,41 @@ header {
   body {
     font-size: 10px;
   }
-  header nav button {
-    margin: 5px;
+
+  button {
+    font-size: var(--fs-body);
+    padding: 4px 8px;
+    margin: 10px 0px;
   }
 
   #intro {
     background-color: var(--bg-intro);
   }
 
-  #intro .avatar img {
+  .intro__img {
     transform: none;
   }
 
-  #intro .content {
+  .intro-content {
     left: 20px;
     color: black;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
   }
-  #intro .content .name {
+  .intro-content__name {
     font-size: 4em;
   }
-  #intro .content .job {
+  .intro-content__job {
     font-size: 6em;
   }
 
-  #intro .content .job .text-gradient {
+  .intro-content__job .text-gradient {
     background-image: linear-gradient(to right, #e4454a, #ca3ea7);
     color: initial;
     text-shadow: none;
     display: inline-block;
   }
 
-  #intro .content .des {
+  .intro-content__des {
     text-shadow: none;
     font-size: 1.5em;
     background-color: var(--bg-intro);
@@ -543,24 +535,18 @@ header {
     padding: 10px 10px 10px 0;
   }
 
-  #intro .content i {
+  .intro-content i {
     position: unset;
     display: none;
   }
   #experience .about {
     flex: 0 0 180px;
   }
-  #skill .list {
+  .skill-list {
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
   }
-  #skill .list .item:nth-child(odd) {
-    background-color: unset;
-  }
-  #skill .list .item:nth-child(2),
-  #skill .list .item:nth-child(3n) {
-    background-color: #3f2525;
-  }
+
   #project .list {
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
