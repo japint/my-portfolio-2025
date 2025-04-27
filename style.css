@@ -157,7 +157,7 @@ header {
   height: fit-content; /* Or you can control height */
   z-index: 10;
 }
-.experience-about__list-wrapper {
+.exp-about__list-wrapper {
   overflow-x: auto;
 }
 
@@ -175,7 +175,7 @@ header {
 /* end about */
 
 /* exp */
-#experience .list {
+.exp-list {
   height: 100%;
   width: max-content;
   display: flex;
@@ -187,7 +187,7 @@ header {
   z-index: 1;
 }
 
-#experience .list .item {
+.exp-item {
   width: 200px;
   flex-shrink: 0;
   display: grid;
@@ -195,7 +195,7 @@ header {
   gap: 20px;
 }
 
-#experience .list .item i {
+.exp-item i {
   background-color: #444b57;
   width: 50px;
   font-size: 2em;
@@ -206,27 +206,27 @@ header {
   border-radius: 50%;
 }
 
-#experience .list .item .time {
+.exp-time {
   font-size: var(--fs-body);
   display: flex;
   align-items: end;
 }
 
-#experience .list .item .content .job {
+.exp-job {
   font-size: var(--fs-h3);
 }
 
-#experience .list .item .content .company {
+.exp-company {
   font-size: var(--fs-h3);
   color: #4adb3d;
 }
 
-#experience .list .item .content .des {
+.exp-des {
   font-size: var(--fs-body);
   opacity: 0.7;
 }
 
-#experience .list .item:nth-child(odd) .content {
+.exp-item:nth-child(odd) .exp-content {
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
@@ -234,13 +234,13 @@ header {
   justify-content: end;
 }
 
-#experience .list .item:nth-child(odd) .time {
+.exp-item:nth-child(odd) .exp-time {
   grid-row-start: 3;
   grid-row-end: 4;
   align-items: start;
 }
 
-#experience .list::before {
+.exp-list::before {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -350,7 +350,7 @@ header {
   position: relative;
 }
 
-#project .list .item .index {
+.proj-index {
   font-weight: bold;
   font-size: 1.5em;
   position: absolute;
@@ -361,24 +361,24 @@ header {
   border-top-right-radius: 20px;
 }
 
-#project .list .name {
+.proj-name {
   font-weight: bold;
   font-size: large;
   padding: 10px;
 }
 
-#project .list .item .des {
+.proj-des {
   padding: 0 10px 10px 10px;
   font-size: small;
 }
 
-#project .list .item .author {
+.proj-author {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   border-top: 1px solid #eee;
 }
-#project .list .item .job {
+.proj-job {
   font-weight: bold;
 }
 
@@ -406,7 +406,7 @@ header {
   display: block;
 }
 
-.links {
+.proj-links {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -417,7 +417,7 @@ header {
   transition: opacity 0.3s ease;
 }
 
-.links a {
+.proj-links a {
   color: white;
   font-size: 2em;
   background-color: rgba(0, 0, 0, 0.6);
@@ -426,13 +426,13 @@ header {
   transition: background 0.3s, transform 0.3s;
 }
 
-.links a:hover {
+.proj-links a:hover {
   background-color: rgba(49, 147, 177, 0.5);
   transform: scale(1.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.image-container:hover .links {
+.image-container:hover .proj-links {
   opacity: 1;
 }
 
@@ -539,7 +539,7 @@ header {
     position: unset;
     display: none;
   }
-  #experience .about {
+  .experience-about {
     flex: 0 0 180px;
   }
   .skill-list {
