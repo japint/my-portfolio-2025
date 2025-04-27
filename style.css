@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 13px;
+  color: var(--bg-contact);
+  background-color: #23282e;
+}
+:root {
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #e2e2de;
+  --clr-dark: #1c1c1b;
+  --clr-accent: linear-gradient(to right, #afee1d, #54d817);
+  --bg-intro: #1c1c1b;
+  --bg-about: #6a5d52;
+  --bg-skill: #979086;
+  --bg-project: #b7ac9b;
+  --bg-contact: #e2e2de;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: var(--fs-body);
+  font-weight: bold;
+  padding: 8px 12px;
+  margin: 10px 10px;
+  transition: background 0.3s;
+  background-image: var(--clr-accent);
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  scale: 1.03;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.tab {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/bg.png);
+  background-size: 50%;
+}
+.tab .container {
+  width: 1140px;
+  max-width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+}
+
+/* intro */
+#intro {
+  background-color: var(--bg-intro);
+}
+#intro .avatar {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#intro .avatar img {
+  height: 60%;
+  filter: saturate(0.5);
+}
+#intro .content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: 500px;
+  max-width: 80%;
+}
+#intro .content .name,
+#intro .content .job {
+  font-size: 6em;
+  font-weight: bold;
+  font-family: "Righteous", sans-serif;
+  line-height: 1em;
+}
+.text-gradient {
+  background-image: var(--clr-accent);
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#intro .content .des {
+  margin-top: 1.2em;
+  width: 70%;
+}
+#intro .content .des button {
+  margin-top: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#intro .content .des button:hover {
+  scale: 1.025;
+}
+
+#intro .content i {
+  font-size: 10em;
+  color: #293b4c;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+/* end intro */
+
+/* about */
+#experience {
+  background-color: var(--bg-about);
+}
+#experience .about-and-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+#experience .about {
+  width: 100%;
+  margin: 0 auto; /* center it horizontally */
+  margin: 20px 0 0 0;
+  padding: 20px;
+  flex: 0 0 150px;
+  max-width: fit-content;
+  padding: 20px;
+  background-color: var(--bg-intro);
+  color: var(--clr-light);
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: fit-content; /* Or you can control height */
+  z-index: 10;
+}
+#experience .list-wrapper {
+  overflow-x: auto;
+}
+
+#experience .about .title {
+  font-size: var(--fs-h3);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#experience .about .subtitle {
+  font-size: var(--fs-body);
+  opacity: 0.8;
+}
+
+/* end about */
+
+/* exp */
+#experience .list {
+  height: 100%;
+  width: max-content;
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#experience .list .item {
+  width: 200px;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-rows: 1fr 50px 1fr;
+  gap: 20px;
+}
+
+#experience .list .item i {
+  background-color: #444b57;
+  width: 50px;
+  font-size: 2em;
+  color: #16222d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#experience .list .item .time {
+  font-size: var(--fs-body);
+  display: flex;
+  align-items: end;
+}
+
+#experience .list .item .content .job {
+  font-size: var(--fs-h3);
+}
+
+#experience .list .item .content .company {
+  font-size: var(--fs-h3);
+  color: #4adb3d;
+}
+
+#experience .list .item .content .des {
+  font-size: var(--fs-body);
+  opacity: 0.7;
+}
+
+#experience .list .item:nth-child(odd) .content {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#experience .list .item:nth-child(odd) .time {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-items: start;
+}
+
+#experience .list::before {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #444b57;
+  content: "";
+  z-index: -1;
+}
+/* end exp */
+
+/* skill */
+#skill {
+  background-color: var(--bg-skill);
+}
+#skill .about-and-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+#skill .about {
+  width: 100%;
+  margin: 0 auto; /* center it horizontally */
+  margin: 20px 0 0 0;
+  padding: 20px;
+  /* flex: 0 0 150px; */
+  max-width: 100%;
+  padding: 20px;
+  background-color: var(--bg-about);
+  color: var(--clr-light);
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: fit-content; /* Or you can control height */
+  z-index: 10;
+}
+#skill .list-wrapper {
+  overflow-x: auto;
+}
+#skill .about .title {
+  font-size: var(--fs-h3);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#skill .about .subtitle {
+  font-size: var(--fs-body);
+  opacity: 0.8;
+}
+#skill .list {
+  margin: 20px 0 0 0;
+  background-image: linear-gradient(45deg, #979086 #1c1c1b, #6a5d52);
+  background-size: cover;
+}
+
+.skill-list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+  box-sizing: border-box;
+  gap: 0;
+}
+
+.skill__item {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  padding: 20px;
+}
+
+#skill .list .item:nth-child(odd) {
+  background-color: #6a5d52;
+}
+
+.skill__container i {
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill__title {
+  font-size: var(--fs-h3);
+}
+.skill__paragraph {
+  font-size: var(--fs-body);
+}
+
+/* end skill */
+
+/* project */
+#project {
+  background-color: #6e6e6e;
+  color: #444b57;
+}
+
+#project .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px;
+}
+
+#project .list .item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#project .list .item {
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+#project .list .item .index {
+  font-weight: bold;
+  font-size: 1.5em;
+  position: absolute;
+  transform: translateY(-100%);
+  background-color: #fff;
+  padding: 10px;
+  font-style: italic;
+  border-top-right-radius: 20px;
+}
+
+#project .list .name {
+  font-weight: bold;
+  font-size: large;
+  padding: 10px;
+}
+
+#project .list .item .des {
+  padding: 0 10px 10px 10px;
+  font-size: small;
+}
+
+#project .list .item .author {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+#project .list .item .job {
+  font-weight: bold;
+}
+
+#project .container {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* link section */
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  display: flex;
+  gap: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.links a {
+  color: white;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.links a:hover {
+  background-color: rgba(49, 147, 177, 0.5);
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover .links {
+  opacity: 1;
+}
+
+/* end project */
+
+/* contact */
+#contact {
+  background-color: #242330;
+}
+
+#contact .thank {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+#contact .des {
+  width: 500px;
+  max-width: 80%;
+  text-align: center;
+}
+
+#contact .des button {
+  margin-top: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact .des button:hover {
+  scale: 1.025;
+}
+
+#contact .list {
+  text-align: center;
+}
+
+#contact .list .item {
+  display: inline-block;
+  margin: 10px 30px;
+}
+/* end contact */
+
+/* responsiveness */
+@media screen and (max-width: 991px) {
+  #intro .avatar img {
+    transform: translateX(200px);
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 10px;
+  }
+  header nav button {
+    margin: 5px;
+  }
+
+  #intro {
+    background-color: var(--bg-intro);
+  }
+
+  #intro .avatar img {
+    transform: none;
+  }
+
+  #intro .content {
+    left: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  }
+  #intro .content .name {
+    font-size: 4em;
+  }
+  #intro .content .job {
+    font-size: 6em;
+  }
+
+  #intro .content .job .text-gradient {
+    background-image: linear-gradient(to right, #e4454a, #ca3ea7);
+    color: initial;
+    text-shadow: none;
+    display: inline-block;
+  }
+
+  #intro .content .des {
+    text-shadow: none;
+    font-size: 1.5em;
+    background-color: var(--bg-intro);
+    color: var(--clr-light);
+    padding: 10px 10px 10px 0;
+  }
+
+  #intro .content i {
+    position: unset;
+    display: none;
+  }
+  #experience .about {
+    flex: 0 0 180px;
+  }
+  #skill .list {
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #skill .list .item:nth-child(odd) {
+    background-color: unset;
+  }
+  #skill .list .item:nth-child(2),
+  #skill .list .item:nth-child(3n) {
+    background-color: #3f2525;
+  }
+  #project .list {
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  #project .list .item img {
+    height: 100px;
+  }
+  #project .list .item {
+    margin-top: 15px;
+  }
+}
+
+/* effect */
+.tab {
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 1;
+}
+#intro {
+  z-index: 2;
+}
+
+.tab.active {
+  --x: 50%;
+  --y: 50%;
+  clip-path: circle(150vmax at var(--x) var(--y));
+  animation: showTab 1s ease-in-out 1;
+}
+@keyframes showTab {
+  from {
+    clip-path: circle(0% at var(--x) var(--y));
+  }
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevGelo Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <nav>
+        <button data-tab="intro">Intro</button>
+        <button data-tab="experience">About</button>
+        <button data-tab="skill">Skill</button>
+        <button data-tab="project">Project</button>
+        <button data-tab="contact">Contact</button>
+      </nav>
+    </header>
+    <!-- end of header -->
+
+    <!-- introduction -->
+    <div class="tab" id="intro">
+      <div class="container">
+        <div class="avatar">
+          <img src="images/avatar3.png" alt="Avatar" class="intro__img" />
+        </div>
+        <div class="content">
+          <div class="name">The Studio:</div>
+          <div class="job">
+            Where Vision Meets <span class="text-gradient"> Creation</span>
+          </div>
+          <div class="des">
+            Crafting Seamless & Engaging Digital Experiences I turn complex
+            challenges into elegant, user-centered web solutions. With a blend
+            of technical precision and creative intuition, I build applications
+            that are not just functional but also captivating. Every project I
+            take on is a balance of performance, aesthetics, and an intuitive
+            user experience—designed to leave a lasting impression.
+            <br />
+            <button class="text-gradient" data-tab="skill">
+              See my Skills
+            </button>
+          </div>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- end introduction -->
+
+    <!-- exp -->
+    <div class="tab" id="experience">
+      <div class="container">
+        <div class="about-and-list">
+          <!-- about -->
+          <div class="about">
+            <div class="title text-gradient">My Journey</div>
+            <div class="subtitle">
+              As a former experienced water/wastewater professional who
+              transitioned to web development, I bring a unique engineering
+              mindset to coding. After relocating from the Philippines to
+              Germany in 2022, I've immersed myself in both German language (B2
+              level) and modern web technologies, specializing in the MERN
+              stack. My technical precision, honed through years of engineering
+              work, combines with creative problem-solving to produce web
+              solutions that are both functional and intuitive. This
+              cross-continental journey has equipped me with exceptional
+              adaptability and a global perspective that enriches every digital
+              experience I create.
+            </div>
+          </div>
+          <!-- end about -->
+          <div class="list-wrapper">
+            <div class="list">
+              <!-- college -->
+              <div class="item">
+                <div class="time">2006</div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="content">
+                  <div class="job">
+                    Bachelor of Science in Information Technology
+                  </div>
+                  <div class="company">Name of School</div>
+                  <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos inventore sint, reprehenderit ab iste officiis
+                    quam, fugiat officia maxime ex cupiditate aspernatur cum!
+                  </div>
+                </div>
+              </div>
+              <!-- end college -->
+
+              <!-- cad -->
+              <div class="item">
+                <div class="time">2009</div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <div class="content">
+                  <div class="job">Autocad Operator</div>
+                  <div class="company">Alpine Systems Corporation</div>
+                  <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil blanditiis dolores sint sit dicta natus provident
+                    quibusdam eum nemo sed!
+                  </div>
+                </div>
+              </div>
+              <!-- end cad -->
+
+              <!-- pic -->
+              <div class="item">
+                <div class="time">2009</div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <div class="content">
+                  <div class="job">Project in Charge</div>
+                  <div class="company">Alpine Systems Corporation</div>
+                  <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil blanditiis dolores sint sit dicta natus provident
+                    quibusdam eum nemo sed!
+                  </div>
+                </div>
+              </div>
+              <!-- end pic -->
+
+              <!-- aec -->
+              <div class="item">
+                <div class="time">2016</div>
+                <i class="fa-solid fa-user-tie"></i>
+                <div class="content">
+                  <div class="job">Project Manager</div>
+                  <div class="company">AEC Water Tech</div>
+                  <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil blanditiis dolores sint sit dicta natus provident
+                    quibusdam eum nemo sed!
+                  </div>
+                </div>
+              </div>
+              <!-- end aec -->
+
+              <!-- relocation / retraining -->
+              <div class="item 2017">
+                <div class="time">2022</div>
+                <i class="fa-solid fa-rocket"></i>
+                <div class="content">
+                  <div class="job">Software Engineer</div>
+                  <div class="company">ReDI School of Digital Integration</div>
+                  <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil blanditiis dolores sint sit dicta natus provident
+                    quibusdam eum nemo sed!
+                  </div>
+                </div>
+              </div>
+              <!-- end relocation / retraining -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end exp -->
+
+    <!-- skill -->
+    <div class="tab" id="skill">
+      <div class="container">
+        <div class="about-and-list">
+          <!-- about -->
+          <div class="about">
+            <div class="title text-gradient">
+              My Toolkit: Crafting Digital Experiences
+            </div>
+            <div class="subtitle">
+              A curated selection of tools and technologies that bring my ideas
+              to life.
+            </div>
+          </div>
+          <!-- end about -->
+          <div class="list-wrapper">
+            <div class="skill-list">
+              <!-- frontend arsenal -->
+              <div class="skill__item">
+                <div class="skill__container">
+                  <i class="fa-brands fa-react"></i>
+                  <div class="skill__title">Front-End Arsenal</div>
+                  <div class="skill__paragraph">
+                    Experience with <br />
+                    React.js, React Router, Axios
+                  </div>
+                </div>
+              </div>
+              <!-- end frontend arsenal -->
+              <!-- backend arsenal -->
+              <div class="skill__item">
+                <div class="skill__container">
+                  <i class="fa-solid fa-database"></i>
+                  <div class="skill__title">Backend Arsenal</div>
+                  <div class="skill__paragraph">
+                    Experience with <br />
+                    Node.js, Express, MongoDB, PostgreSQL, Vite
+                  </div>
+                </div>
+              </div>
+              <!-- end backend arsenal -->
+              <!-- design arsenal -->
+              <div class="skill__item">
+                <div class="skill__container">
+                  <i class="fa-brands fa-figma"></i>
+                  <div class="skill__title">Design Workshop</div>
+                  <div class="skill__paragraph">
+                    Experience with <br />
+                    Tools like Figma
+                  </div>
+                </div>
+              </div>
+              <!-- end desing arsenal -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end skill -->
+
+    <!-- project -->
+    <div class="tab" id="project">
+      <div class="container">
+        <div class="list">
+          <!-- proj 1 -->
+          <div class="item">
+            <div class="image-container">
+              <img src="images/project1.jpg" alt="" />
+              <div class="links">
+                <a
+                  href="https://github.com/your-repo"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://your-demo-link.com"
+                  target="_blank"
+                  title="Live Demo"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="index">#1</div>
+            <div class="name">Project Name</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dignissimos illo laboriosam ipsam accusamus, quibusdam ratione
+              iusto libero non voluptatem.
+            </div>
+            <div class="author">
+              <div class="job">FullStack</div>
+              <div class="time">
+                2022/10/10
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end proj 1 -->
+
+          <!-- proj 2 -->
+          <div class="item">
+            <div class="image-container">
+              <img src="images/project2.jpg" alt="" />
+              <div class="links">
+                <a
+                  href="https://github.com/your-repo"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://your-demo-link.com"
+                  target="_blank"
+                  title="Live Demo"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="index">#2</div>
+            <div class="name">Project Name</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dignissimos illo laboriosam ipsam accusamus, quibusdam ratione
+              iusto libero non voluptatem.
+            </div>
+            <div class="author">
+              <div class="job">FullStack</div>
+              <div class="time">
+                2022/10/10
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end proj 2 -->
+          <!-- proj 3 -->
+          <div class="item">
+            <div class="image-container">
+              <img src="images/project3.jpg" alt="" />
+              <div class="links">
+                <a
+                  href="https://github.com/your-repo"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://your-demo-link.com"
+                  target="_blank"
+                  title="Live Demo"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="index">#3</div>
+            <div class="name">Project Name</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dignissimos illo laboriosam ipsam accusamus, quibusdam ratione
+              iusto libero non voluptatem.
+            </div>
+            <div class="author">
+              <div class="job">FullStack</div>
+              <div class="time">
+                2022/10/10
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end proj 3 -->
+
+          <!-- proj 4 -->
+          <div class="item">
+            <div class="image-container">
+              <img src="images/project4.jpg" alt="" />
+              <div class="links">
+                <a
+                  href="https://github.com/your-repo"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://your-demo-link.com"
+                  target="_blank"
+                  title="Live Demo"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="index">#4</div>
+            <div class="name">Project Name</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dignissimos illo laboriosam ipsam accusamus, quibusdam ratione
+              iusto libero non voluptatem.
+            </div>
+            <div class="author">
+              <div class="job">FullStack</div>
+              <div class="time">
+                2022/10/10
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end proj 4 -->
+
+          <!-- proj 5 -->
+          <div class="item">
+            <div class="image-container">
+              <img src="images/project5.jpg" alt="" />
+              <div class="links">
+                <a
+                  href="https://github.com/your-repo"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://your-demo-link.com"
+                  target="_blank"
+                  title="Live Demo"
+                >
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="index">#5</div>
+            <div class="name">Project Name</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              dignissimos illo laboriosam ipsam accusamus, quibusdam ratione
+              iusto libero non voluptatem.
+            </div>
+            <div class="author">
+              <div class="job">FullStack</div>
+              <div class="time">
+                2022/10/10
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end proj 5 -->
+        </div>
+      </div>
+    </div>
+    <!-- end project -->
+
+    <!-- contact -->
+    <div class="tab" id="contact">
+      <div class="container">
+        <div class="thank text-gradient">Thank You!</div>
+        <div class="des">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          nulla eum. Rem, porro sint possimus necessitatibus provident quidem
+          suscipit nihil dolor molestias maxime inventore! Reiciendis magnam
+          accusamus beatae! Vel illum fugit harum non doloremque quis modi
+          delectus laborum possimus tenetur nihil, iste odit quibusdam dolore
+          vero commodi eum voluptas deserunt!
+          <br />
+          <button data-tab="intro" class="text-gradient">See my Intro</button>
+        </div>
+        <div class="list">
+          <div class="item">
+            <i class="fa-solid fa-envelope"></i>
+            japcenteno@gmail.com
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-phone"></i>
+            +15734708799
+          </div>
+          <div class="item">
+            <i class="fa-brands fa-linkedin"></i>
+            https://www.linkedin.com/in/angelo-centeno/
+          </div>
+          <div class="item">
+            <i class="fa-brands fa-github"></i>
+            https://github.com/japint
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
