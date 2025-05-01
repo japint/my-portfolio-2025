@@ -520,6 +520,7 @@ header {
   .introContentJob {
     font-size: 6em;
   }
+
   .textGradient {
     background-image: var(--clr-accent);
     display: inline-block;
@@ -563,6 +564,12 @@ header {
 @media screen and (max-width: 431px) {
   .introContent {
     margin: 30px 0 0 0;
+  }
+  .introContentName {
+    font-size: 5em;
+  }
+  .introContentJob {
+    font-size: 6em;
   }
   .experienceAboutAndList {
     margin: 30px 0 0 0;
