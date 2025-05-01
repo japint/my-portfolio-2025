@@ -82,11 +82,11 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.intro__img {
+.introImg {
   height: 60%;
   filter: saturate(0.5);
 }
-.intro-content {
+.introContent {
   position: absolute;
   top: 50%;
   left: 50px;
@@ -94,34 +94,34 @@ header {
   width: 500px;
   max-width: 80%;
 }
-.intro-content__name,
-.intro-content__job {
+.introContentName,
+.introContentJob {
   font-size: 6em;
   font-weight: bold;
   font-family: "Righteous", sans-serif;
   line-height: 1em;
 }
-.text-gradient {
+.textGradient {
   background-image: var(--clr-accent);
   display: inline-block;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.intro-content__des {
+.introContentDes {
   margin-top: 1.2em;
   width: 70%;
 }
-.intro-content__des button {
+.introContentDes button {
   margin-top: 1.2em;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
 }
-.intro-content__des button:hover {
+.introContentDes button:hover {
   scale: 1.025;
 }
 
-.intro-content i {
+.introContent i {
   font-size: 10em;
   color: #293b4c;
   position: absolute;
@@ -134,14 +134,14 @@ header {
 #experience {
   background-color: var(--bg-about);
 }
-.experience-about-and-list {
+.experienceAboutAndList {
   display: flex;
   flex-direction: column;
   gap: 30px;
   position: relative;
 }
 
-.experience-about {
+.experienceAbout {
   width: 100%;
   margin: 0 auto; /* center it horizontally */
   margin: 20px 0 0 0;
@@ -157,17 +157,17 @@ header {
   height: fit-content; /* Or you can control height */
   z-index: 10;
 }
-.exp-about__list-wrapper {
+.expAboutListWrapper {
   overflow-x: auto;
 }
 
-.experience-about__title {
+.experienceAboutTitle {
   font-size: var(--fs-h3);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.experience-about__subtitle {
+.experienceAboutSubtitle {
   font-size: var(--fs-body);
   opacity: 0.8;
 }
@@ -175,7 +175,7 @@ header {
 /* end about */
 
 /* exp */
-.exp-list {
+.expList {
   height: 100%;
   width: max-content;
   display: flex;
@@ -187,7 +187,7 @@ header {
   z-index: 1;
 }
 
-.exp-item {
+.expItem {
   width: 200px;
   flex-shrink: 0;
   display: grid;
@@ -195,7 +195,7 @@ header {
   gap: 20px;
 }
 
-.exp-item i {
+.expItem i {
   background-color: #444b57;
   width: 50px;
   font-size: 2em;
@@ -206,27 +206,27 @@ header {
   border-radius: 50%;
 }
 
-.exp-time {
+.expTime {
   font-size: var(--fs-body);
   display: flex;
   align-items: end;
 }
 
-.exp-job {
+.expJob {
   font-size: var(--fs-h3);
 }
 
-.exp-company {
+.expCompany {
   font-size: var(--fs-h3);
   color: #4adb3d;
 }
 
-.exp-des {
+.expDes {
   font-size: var(--fs-body);
   opacity: 0.7;
 }
 
-.exp-item:nth-child(odd) .exp-content {
+.expItem:nth-child(odd) .expContent {
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
@@ -234,13 +234,13 @@ header {
   justify-content: end;
 }
 
-.exp-item:nth-child(odd) .exp-time {
+.expItem:nth-child(odd) .expTime {
   grid-row-start: 3;
   grid-row-end: 4;
   align-items: start;
 }
 
-.exp-list::before {
+.expList::before {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -504,30 +504,30 @@ header {
     background-color: var(--bg-intro);
   }
 
-  .intro__img {
+  .introImg {
     transform: none;
   }
 
-  .intro-content {
+  .introContent {
     left: 20px;
     color: black;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
   }
-  .intro-content__name {
+  .introContentName {
     font-size: 4em;
   }
-  .intro-content__job {
+  .introContentJob {
     font-size: 6em;
   }
 
-  .intro-content__job .text-gradient {
+  .introContentJob .text-gradient {
     background-image: linear-gradient(to right, #e4454a, #ca3ea7);
     color: initial;
     text-shadow: none;
     display: inline-block;
   }
 
-  .intro-content__des {
+  .introContentDes {
     text-shadow: none;
     font-size: 1.5em;
     background-color: var(--bg-intro);
@@ -535,11 +535,11 @@ header {
     padding: 10px 10px 10px 0;
   }
 
-  .intro-content i {
+  .introContent i {
     position: unset;
     display: none;
   }
-  .experience-about {
+  .experienceAbout {
     flex: 0 0 180px;
   }
   .skill-list {
