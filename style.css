@@ -561,8 +561,11 @@ header {
   }
 }
 @media screen and (max-width: 431px) {
+  .introContent {
+    margin: 30px 0 0 0;
+  }
   .experienceAboutAndList {
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
   }
   .experienceAboutTitle {
     font-size: var(--fs-body);
@@ -594,11 +597,11 @@ header {
     opacity: 0.7;
   }
   .aboutAndList {
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
     max-width: fit-content;
   }
   .projectList {
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
   }
 }
 
