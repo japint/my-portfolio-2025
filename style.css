@@ -520,7 +520,7 @@ header {
     font-size: 6em;
   }
 
-  .introContentJob .text-gradient {
+  .introContentJob .textGradient {
     background-image: linear-gradient(to right, #e4454a, #ca3ea7);
     color: initial;
     text-shadow: none;
