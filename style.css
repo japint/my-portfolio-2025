@@ -154,7 +154,7 @@ header {
   position: sticky;
   left: 0;
   top: 0;
-  height: fit-content; /* Or you can control height */
+  height: fit-content;
   z-index: 10;
 }
 .listWrapper {
@@ -264,9 +264,9 @@ header {
 
 .skillAbout {
   width: 100%;
-  margin: 0 auto; /* center it horizontally */
   margin: 20px 0 0 0;
   padding: 20px;
+  flex: 0 0 150px;
   max-width: 100%;
   padding: 20px;
   background-color: var(--bg-about);
@@ -563,7 +563,7 @@ header {
 }
 @media screen and (max-width: 431px) {
   .introContent {
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
   }
   .introContentName {
     font-size: 5em;
@@ -572,7 +572,7 @@ header {
     font-size: 6em;
   }
   .experienceAboutAndList {
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .experienceAboutTitle {
     font-size: var(--fs-body);
@@ -604,11 +604,17 @@ header {
     opacity: 0.7;
   }
   .aboutAndList {
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     max-width: fit-content;
   }
   .projectList {
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
+  }
+  .projLinks {
+    opacity: 1;
+  }
+  .skillAbout {
+    max-width: fit-content;
   }
 }
 
@@ -622,7 +628,7 @@ header {
   z-index: 2;
 }
 
-.tab.active {
+.tab .active {
   --x: 50%;
   --y: 50%;
   clip-path: circle(150vmax at var(--x) var(--y));
