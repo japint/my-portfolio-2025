@@ -8,14 +8,14 @@ Welcome to my website! This project is hosted on **GitHub Pages** and is availab
 
 Click the link below to view the live site:
 
-👉 [View Website](https://japint.github.io/my-portfolio-2025/)
+👉 [View Website](https://devgelo.netlify.app/)
 
 ## 🛠️ Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages for hosting
+- GitHub Pages / netlify for hosting
 
 ## 📁 How to Use Locally
 
