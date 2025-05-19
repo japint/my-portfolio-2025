@@ -9,6 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M3WMPV7CPN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "<%= process.env.GA_TRACKING_ID %>");
+    </script>
   </head>
   <body>
     <!-- start of header -->
@@ -43,6 +56,14 @@
             user experience—designed to leave a lasting impression.
             <br />
             <button class="textGradient" data-tab="skill">See my Skills</button>
+            <a
+              href="CV_Angelo_Centeno.pdf"
+              download
+              aria-label="Download CV in PDF format"
+              class="cvButton"
+              >Download CV
+              <span class="hoverEffect"></span>
+            </a>
           </div>
           <i class="fa-solid fa-quote-right"></i>
         </div>
