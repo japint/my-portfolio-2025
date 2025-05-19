@@ -6,6 +6,21 @@ let contact = document.getElementById("contact");
 
 let buttons = document.querySelectorAll("button");
 
+document.querySelector(".cvButton").addEventListener("click", () => {
+  gtag("event", "download", {
+    file_name: "Angelo_Centeno_CV.pdf",
+    category: "engagement",
+  });
+});
+
+document
+  .querySelector('[data-tab="experience"]')
+  .addEventListener("click", () => {
+    gtag("event", "view_experience", {
+      category: "navigation",
+    });
+  });
+
 let active = "intro";
 let zIndex = 2;
 
