@@ -496,7 +496,7 @@ header {
 
 /* contact */
 #contact {
-  background-color: var(--bg-contact);
+  background-color: var(--bg-intro);
   color: var(--clr-dark);
 }
 
@@ -514,7 +514,10 @@ header {
   padding: 50px;
 }
 .contactDes {
-  width: 500px;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  color: var(--clr-light);
+  width: 1200px;
   max-width: 80%;
   text-align: center;
 }
@@ -531,12 +534,55 @@ header {
 }
 
 .contactList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  color: var(--clr-dark);
+  background-color: #dcdcd3;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin-inline: auto;
   text-align: center;
 }
 
 .contactListItem {
-  display: inline-block;
-  margin: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--fs-body);
+  color: var(--clr-dark);
+  transition: all 0.3s ease;
+}
+
+.contactListItem i {
+  font-size: 1.2rem;
+  color: #444b57;
+  background: var(--clr-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactListItem a {
+  color: var(--clr-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contactListItem a:hover {
+  text-decoration: underline;
+  color: #54d817;
+}
+
+.contactListItem:hover {
+  transform: scale(1.02);
+  color: #54d817;
 }
 /* end contact */
 
